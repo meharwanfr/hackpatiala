@@ -5,3 +5,22 @@ __pycache__/
 .env
 backend/.env
 frontend/.env
+
+# Database files
+*.db
+*.sqlite3
+
+# Python
+*.egg-info/
+.eggs/
+*.whl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

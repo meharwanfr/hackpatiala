@@ -9,6 +9,8 @@ import { GlossaryPage } from './pages/GlossaryPage';
 import { SimulationHistoryPage } from './pages/SimulationHistoryPage';
 import { DocumentReaderPage } from './pages/DocumentReaderPage';
 import { AuthPage } from './pages/AuthPage';
+import { UserTypeSelector } from './pages/UserTypeSelector';
+import { LearnerOnboarding } from './pages/LearnerOnboarding';
 import { DecisionCoachModal } from './components/DecisionCoachModal';
 import { AuthProvider, useAuth } from './context/AuthContext';
 
@@ -24,6 +26,7 @@ export const AppContent: React.FC = () => {
   >('dashboard');
   const [profile, setProfile]             = useState<UserFitnessProfile>(loadFitnessProfile());
   const [selectedSimAsset, setSelectedSimAsset] = useState<Asset | null>(null);
+  const [postAuthFlow, setPostAuthFlow]   = useState<'none' | 'typeSelector' | 'learnerOnboarding'>('none');
 
   // Hash routing
   useEffect(() => {
@@ -62,6 +65,10 @@ export const AppContent: React.FC = () => {
     setProfile(loadFitnessProfile());
   };
 
+  // Determine if user needs post-auth onboarding
+  const needsTypeSelector = user && !user.userType;
+  const needsLearnerOnboarding = user && user.userType === 'learner' && postAuthFlow === 'learnerOnboarding';
+
   // Auth loading splash
   if (authLoading) {
     return (
@@ -74,8 +81,34 @@ export const AppContent: React.FC = () => {
     );
   }
 
+  // ── Post-Auth: Type Selector (new signup) ──
+  if (needsTypeSelector || (user && postAuthFlow === 'typeSelector')) {
+    return (
+      <UserTypeSelector
+        onComplete={() => {
+          if (user?.userType === 'learner') {
+            setPostAuthFlow('learnerOnboarding');
+          } else {
+            setPostAuthFlow('none');
+          }
+        }}
+      />
+    );
+  }
+
+  // ── Post-Auth: Learner Onboarding Flow ──
+  if (needsLearnerOnboarding) {
+    return (
+      <LearnerOnboarding
+        onComplete={() => {
+          setPostAuthFlow('none');
+          setCurrentTab('dashboard');
+        }}
+      />
+    );
+  }
+
   // ── Unauthenticated Visitor Experience ──
-  // Starts with Home Page; users can navigate to Sign Up or use instant demo
   if (!user) {
     if (unauthPage === 'home') {
       return (
@@ -104,7 +137,7 @@ export const AppContent: React.FC = () => {
           initialMode={authMode}
           onBackToHome={() => setUnauthPage('home')}
           onSuccessRedirect={() => {
-            setCurrentTab('dashboard');
+            setPostAuthFlow('typeSelector');
           }}
         />
       </div>

@@ -75,7 +75,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({
         if (error) {
           setErrorMsg(error);
         } else {
-          setSuccessMsg('âœ… Signed in successfully! Welcome back to FundBee.');
+          setSuccessMsg('✅ Signed in successfully! Welcome back to FundBee.');
           if (onSuccessRedirect) {
             setTimeout(() => {
               onSuccessRedirect();
@@ -144,14 +144,14 @@ export const AuthPage: React.FC<AuthPageProps> = ({
           onClick={onBackToHome}
           className="inline-flex items-center gap-1.5 text-xs text-gray-500 hover:text-gray-900 font-semibold mb-6 transition-colors cursor-pointer"
         >
-          <span>â† Back to Home Page</span>
+          <span>← Back to Home Page</span>
         </button>
       )}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         {/* Left Feature Column */}
         <div className="md:col-span-5 space-y-6">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-100 text-amber-900 text-xs font-bold">
-            <span className="text-base">Ã°Å¸ÂÂ</span>
+            <span className="text-base">🐝Â</span>
             <span>Welcome to FundBee</span>
           </div>
 
@@ -330,7 +330,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({
                     minLength={6}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢"
+                    placeholder="••••••••"
                     className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-gray-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100 text-xs text-gray-800 outline-none transition-all placeholder:text-gray-400"
                   />
                   <button
@@ -372,7 +372,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({
                 }}
                 className="text-xs text-emerald-700 hover:text-emerald-800 font-bold hover:underline py-1.5 px-3 rounded-lg hover:bg-emerald-50 transition-colors"
               >
-                âš¡ Instant Access: Explore as Demo Investor
+                ⚡ Instant Access: Explore as Demo Investor
               </button>
             </div>
           </div>

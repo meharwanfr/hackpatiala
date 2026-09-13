@@ -7,22 +7,22 @@ interface LiveHypeCheckerProps {
 
 const PRESET_HEADLINES = [
   {
-    label: 'ðŸš€ Meme Stock FOMO',
+    label: '🚀 Meme Stock FOMO',
     ticker: 'GME',
-    text: 'Short squeeze incoming! Apes buy the dip to the moon ðŸš€ðŸš€ðŸ’ŽðŸ™Œ',
+    text: 'Short squeeze incoming! Apes buy the dip to the moon 🚀🚀💎💪',
   },
   {
-    label: 'ðŸ“ˆ Tech Earnings',
+    label: '📈 Tech Earnings',
     ticker: 'AAPL',
     text: 'Apple reports quarterly revenue growth of 8% with expanded services margin',
   },
   {
-    label: 'ðŸ”¥ Crypto Hype',
+    label: '🔥 Crypto Hype',
     ticker: 'BTC',
-    text: 'Bitcoin breaking out to $150k imminent! Massive pump loading get in before it is too late ðŸ”¥',
+    text: 'Bitcoin breaking out to $150k imminent! Massive pump loading get in before it is too late 🔥',
   },
   {
-    label: 'ðŸ›¡ Index Stability',
+    label: '🛡 Index Stability',
     ticker: 'VTI',
     text: 'Total stock market ETF completes scheduled quarterly rebalancing with minimal tracking error',
   },
@@ -30,7 +30,7 @@ const PRESET_HEADLINES = [
 
 export const LiveHypeChecker: React.FC<LiveHypeCheckerProps> = ({ initialHeadline }) => {
   const [headline, setHeadline] = useState(
-    initialHeadline || 'Short squeeze incoming! Apes buy the dip to the moon ðŸš€ðŸš€ðŸ’ŽðŸ™Œ'
+    initialHeadline || 'Short squeeze incoming! Apes buy the dip to the moon 🚀🚀💎💪'
   );
   const [testing, setTesting] = useState(false);
   const [result, setResult] = useState<{
@@ -77,7 +77,7 @@ export const LiveHypeChecker: React.FC<LiveHypeCheckerProps> = ({ initialHeadlin
 
     // Client-side fallback rule
     const lower = text.toLowerCase();
-    const hypeKeywords = ['moon', 'ðŸš€', 'squeeze', 'yolo', 'pump', 'gem', 'apes', 'diamond', 'breakout', 'hodl'];
+    const hypeKeywords = ['moon', '🚀', 'squeeze', 'yolo', 'pump', 'gem', 'apes', 'diamond', 'breakout', 'hodl'];
     const hasHype = hypeKeywords.some((k) => lower.includes(k)) || (text.match(/!/g) || []).length >= 2;
     const score = hasHype ? 84.5 : 22.0;
 
@@ -157,7 +157,7 @@ export const LiveHypeChecker: React.FC<LiveHypeCheckerProps> = ({ initialHeadlin
               onKeyDown={(e) => {
                 if (e.key === 'Enter') analyzeHeadline(headline);
               }}
-              placeholder="Paste headline or post (e.g., GME TO THE MOON ðŸš€)..."
+              placeholder="Paste headline or post (e.g., GME TO THE MOON 🚀)..."
               className="w-full px-4 py-3 rounded-2xl text-[14px] border focus:outline-none transition-all"
               style={{
                 fontFamily: 'Archivo, sans-serif',

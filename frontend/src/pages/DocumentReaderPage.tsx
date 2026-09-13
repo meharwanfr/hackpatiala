@@ -22,16 +22,16 @@ const SAMPLE_DOCUMENTS = [
     name: 'apple_q1_2025_earnings_excerpt.txt',
     label: 'Apple Q1 2025 Earnings Excerpt',
     content: `APPLE REPORTS FIRST QUARTER RESULTS
-CUPERTINO, CALIFORNIA â€” January 30, 2025 â€” Apple today announced financial results for its fiscal 2025 first quarter ended December 28, 2024. The Company posted quarterly revenue of $124.3 billion, up 4 percent year-over-year, and quarterly diluted earnings per share of $2.40, up 10 percent year-over-year.
+CUPERTINO, CALIFORNIA — January 30, 2025 — Apple today announced financial results for its fiscal 2025 first quarter ended December 28, 2024. The Company posted quarterly revenue of $124.3 billion, up 4 percent year-over-year, and quarterly diluted earnings per share of $2.40, up 10 percent year-over-year.
 "Today Apple is reporting an all-time revenue record of $124.3 billion, driven by double-digit growth in Services and iPhone 16 demand," said Tim Cook, Apple's CEO.
 "Our active installed base of devices has reached a new all-time high of over 2.35 billion active devices across all products and all geographic segments."
-The Company generated operating cash flow of $39.9 billion and returned over $30 billion to shareholders through dividend payouts and share repurchases. The Board of Directors declared a cash dividend of $0.25 per share of the Companyâ€™s common stock. Gross margin for the quarter was 46.2 percent, compared to 45.9 percent in the year-ago quarter. Operating expenses totaled $15.3 billion.
+The Company generated operating cash flow of $39.9 billion and returned over $30 billion to shareholders through dividend payouts and share repurchases. The Board of Directors declared a cash dividend of $0.25 per share of the Company’s common stock. Gross margin for the quarter was 46.2 percent, compared to 45.9 percent in the year-ago quarter. Operating expenses totaled $15.3 billion.
 iPhone revenue was $69.7 billion, Services revenue set an all-time record of $26.3 billion (up 14% year-over-year), while Mac revenue reached $8.2 billion and Wearables, Home and Accessories was $10.1 billion. Foreign exchange headwinds accounted for approximately 180 basis points of drag on net year-over-year comparisons.`,
   },
   {
     name: 'vanguard_s_and_p_500_factsheet.txt',
     label: 'Vanguard 500 Index Fund (VOO) Fact Sheet',
-    content: `VANGUARD S&P 500 ETF (VOO) â€” FUND SUMMARY & FACT SHEET
+    content: `VANGUARD S&P 500 ETF (VOO) — FUND SUMMARY & FACT SHEET
 Investment Objective:
 Vanguard 500 Index Fund seeks to track the investment performance of the S&P 500 Index, an unmanaged benchmark representing 500 of the largest U.S. publicly traded corporations across 11 sectors.
 
@@ -187,7 +187,7 @@ ${result.key_fact}
 TAKEAWAY FOR FIRST-TIME INVESTORS:
 ${result.takeaway}
 
-(AI-generated summary â€” always verify against original document)`;
+(AI-generated summary — always verify against original document)`;
 
     navigator.clipboard.writeText(textToCopy).then(() => {
       setCopied(true);
@@ -493,7 +493,7 @@ ${result.takeaway}
           {/* Mandatory Disclaimer */}
           <div className="bg-gray-50 border border-gray-200/80 rounded-2xl p-4 text-center">
             <p className="text-xs text-gray-500 font-medium">
-              âš ï¸ AI-generated summary â€” always verify against the original document before making decisions.
+              ⚠️ AI-generated summary — always verify against the original document before making decisions.
             </p>
           </div>
         </div>

@@ -1,19 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* ─── Base ─────────────────────────────────────────────────────── */
 :root {
-  --color-ink:    #181D1F;
-  --color-ink-60: #424647;
-  --color-ink-40: #7d7d87;
-  --color-coral:  #FD956D;
-  --color-cream:  #EAE4DC;
+  --color-ink:      #181D1F;
+  --color-ink-60:   #424647;
+  --color-ink-40:   #7d7d87;
+  --color-coral:    #FD956D;
+  --color-cream:    #EAE4DC;
   --color-cream-lt: #F8F4EF;
-  --color-sky:    #15aeea;
-  --color-bg:     #ffffff;
+  --color-bg:       #ffffff;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -21,7 +18,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Gabarito', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--color-bg);
   color: var(--color-ink);
   min-height: 100vh;
@@ -30,20 +27,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ─── Typography ────────────────────────────────────────────────── */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Gabarito', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 600;
   letter-spacing: -0.015em;
   color: #181D1F;
 }
-
-p, span, div {
-  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-.font-gabarito { font-family: 'Gabarito', -apple-system, BlinkMacSystemFont, sans-serif !important; }
-.font-archivo  { font-family: 'Archivo',  -apple-system, BlinkMacSystemFont, sans-serif !important; }
 
 /* ─── Scrollbar ─────────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
@@ -53,11 +42,11 @@ p, span, div {
 
 /* ─── Focus ─────────────────────────────────────────────────────── */
 :focus-visible {
-  outline: 2px solid var(--color-sky);
+  outline: 2px solid #15aeea;
   outline-offset: 2px;
 }
 
-/* ─── Reasonal-style card ───────────────────────────────────────── */
+/* ─── Card ──────────────────────────────────────────────────────── */
 .r-card {
   background: #ffffff;
   border: 1px solid #E7E7E9;
@@ -70,7 +59,7 @@ p, span, div {
   transform: translateY(-2px);
 }
 
-/* ─── Reasonal-style pill button (dark) ────────────────────────── */
+/* ─── Buttons ───────────────────────────────────────────────────── */
 .r-btn-dark {
   background-color: #181D1F;
   color: #ffffff;
@@ -90,7 +79,6 @@ p, span, div {
 .r-btn-dark:hover { background-color: #232930; }
 .r-btn-dark:active { background-color: #3A4248; }
 
-/* ─── Reasonal-style pill button (outline) ─────────────────────── */
 .r-btn-outline {
   background-color: transparent;
   color: #181D1F;
@@ -110,7 +98,7 @@ p, span, div {
   background-color: rgba(24,29,31,0.06);
 }
 
-/* ─── Reasonal-style coral/orange accent pill ──────────────────── */
+/* ─── Badge ─────────────────────────────────────────────────────── */
 .r-badge {
   display: inline-flex;
   align-items: center;
@@ -124,7 +112,7 @@ p, span, div {
   text-transform: uppercase;
 }
 
-/* ─── Smooth page animations ───────────────────────────────────── */
+/* ─── Animations ────────────────────────────────────────────────── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0);    }
@@ -139,19 +127,7 @@ p, span, div {
 .animate-fade-up-delay-3 { animation-delay: 0.24s; }
 .animate-fade-up-delay-4 { animation-delay: 0.32s; }
 
-@keyframes shimmer {
-  from { background-position: -200% center; }
-  to   { background-position:  200% center; }
-}
-
-/* ─── Reasonal hero gradient text ──────────────────────────────── */
-.hero-gradient-text {
-  background: linear-gradient(135deg, #181D1F 0%, #424647 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
+/* ─── Gradient text ─────────────────────────────────────────────── */
 .coral-gradient-text {
   background: linear-gradient(135deg, #FD956D 0%, #e07840 100%);
   -webkit-background-clip: text;
@@ -159,15 +135,7 @@ p, span, div {
   background-clip: text;
 }
 
-/* ─── Nav frosted glass ─────────────────────────────────────────── */
-.nav-glass {
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(231, 231, 233, 0.8);
-}
-
-/* ─── Section dividers ──────────────────────────────────────────── */
+/* ─── Section label ─────────────────────────────────────────────── */
 .section-label {
   font-family: 'Archivo', sans-serif;
   font-size: 11px;
@@ -177,17 +145,29 @@ p, span, div {
   color: #7d7d87;
 }
 
-/* ─── Pastel feature card backgrounds (Reasonal style) ─────────── */
-.bg-pastel-coral  { background-color: #FDDBCE; }
-.bg-pastel-sage   { background-color: #D5E2DA; }
-.bg-pastel-sky    { background-color: #DCEEEF; }
-.bg-pastel-plum   { background-color: #D7CEF0; }
-.bg-pastel-lime   { background-color: #E4EED2; }
-.bg-pastel-blush  { background-color: #F4E1E1; }
-.bg-pastel-peach  { background-color: #F6E7CF; }
-.bg-pastel-cream  { background-color: #EAE4DC; }
+/* ─── Feature card hover ────────────────────────────────────────── */
+.feature-card {
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.feature-card:hover {
+  box-shadow: 0 8px 24px rgba(24,29,31,0.08);
+}
 
-/* ─── Risk/Hype score rings ─────────────────────────────────────── */
+/* ─── Nav scroll shadow ─────────────────────────────────────────── */
+.nav-scrolled {
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+}
+
+/* ─── Input focus ring ──────────────────────────────────────────── */
+.input-modern {
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.input-modern:focus {
+  border-color: #FD956D;
+  box-shadow: 0 0 0 3px rgba(253,149,109,0.12);
+}
+
+/* ─── Score ring ────────────────────────────────────────────────── */
 .score-ring {
   width: 44px;
   height: 44px;
@@ -198,4 +178,89 @@ p, span, div {
   font-family: 'Gabarito', sans-serif;
   font-weight: 700;
   font-size: 13px;
+}
+
+/* ─── Nav frosted glass ─────────────────────────────────────────── */
+.nav-glass {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(231, 231, 233, 0.85);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* ─── Nav scrolled shadow ───────────────────────────────────────── */
+.nav-scrolled {
+  box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+}
+
+/* ─── Celebration confetti animation ──────────────────────────── */
+@keyframes celebration {
+  0% {
+    opacity: 0;
+    transform: translateY(0) rotate(0deg) scale(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(20vh) rotate(72deg) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(80vh) rotate(360deg) scale(0.5);
+  }
+}
+.animate-celebration {
+  animation: celebration 2.5s ease-out forwards;
+}
+
+/* ─── No-scrollbar utility ────────────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ─── Hero mesh background ────────────────────────────────────── */
+.hero-mesh-bg {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -20%, rgba(253,149,109,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 50%, rgba(213,226,218,0.25) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 40% at 20% 70%, rgba(220,238,239,0.2) 0%, transparent 50%),
+    #ffffff;
+}
+
+/* ─── Glow orb ────────────────────────────────────────────────── */
+.hero-glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  pointer-events: none;
+  animation: floatOrb 8s ease-in-out infinite;
+}
+
+@keyframes floatOrb {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+}
+
+/* ─── Button glow ─────────────────────────────────────────────── */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+.btn-glow::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(253,149,109,0.4), rgba(253,149,109,0.1));
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.btn-glow:hover::after {
+  opacity: 1;
+}
+
+/* ─── Shadow card ─────────────────────────────────────────────── */
+.shadow-card {
+  box-shadow: 0 4px 24px rgba(116,130,151,0.10);
 }

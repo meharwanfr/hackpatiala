@@ -1,13 +1,17 @@
 {
   "name": "moneymind-root",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "MoneyMind - Mind Over Money investing platform",
   "scripts": {
     "dev": "npm --prefix frontend run dev",
     "frontend": "npm --prefix frontend run dev",
     "backend": "python -m uvicorn main:app --app-dir backend --reload --port 8000",
+    "backend:prod": "python -m uvicorn main:app --app-dir backend --host 0.0.0.0 --port 8000 --workers 2",
     "build": "npm --prefix frontend run build",
-    "train": "python training/generate_demo_weights.py"
+    "train": "python training/generate_demo_weights.py",
+    "test": "cd backend && python -m pytest test_api.py -v",
+    "migrate": "cd backend && alembic upgrade head",
+    "migrate:create": "cd backend && alembic revision --autogenerate -m"
   }
 }

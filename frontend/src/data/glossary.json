@@ -672,5 +672,309 @@
       "indicators",
       "candlestick"
     ]
+  },
+  {
+    "term": "Capital Gains",
+    "slug": "capital-gains",
+    "eli5": "Capital gains are the profit you make when you sell an investment for more than you paid for it. If you bought a stock at $50 and sold it at $80, your capital gain is $30.",
+    "analogy": "It's like buying a concert ticket for $100 and selling it for $200 when the show sells out — the $100 profit is your capital gain.",
+    "keywords": [
+      "capital gains",
+      "profit",
+      "selling price",
+      "realized gain",
+      "capital gain tax"
+    ]
+  },
+  {
+    "term": "Blue Chip Stock",
+    "slug": "blue-chip-stock",
+    "eli5": "Blue chip stocks are shares of large, well-established, financially stable companies with a long track record of reliable performance. Think Apple, Microsoft, or Johnson & Johnson.",
+    "analogy": "Blue chip stocks are like the star players on a sports team — they have a proven track record and are the safest bets on the roster.",
+    "keywords": [
+      "blue chip",
+      "large cap",
+      "established company",
+      "stable stock",
+      "reliable"
+    ]
+  },
+  {
+    "term": "Penny Stock",
+    "slug": "penny-stock",
+    "eli5": "Penny stocks are shares of very small companies that trade at low prices, usually under $5 per share. They're extremely risky and volatile — many people lose money chasing quick profits.",
+    "analogy": "Penny stocks are like scratch-off lottery tickets — cheap to buy, but the odds of striking it rich are very low.",
+    "keywords": [
+      "penny stock",
+      "micro cap",
+      "speculative",
+      "high risk",
+      "small cap stock"
+    ]
+  },
+  {
+    "term": "Bond",
+    "slug": "bond",
+    "eli5": "A bond is a loan you give to a company or government, and they pay you back with interest over time. Bonds are generally safer than stocks but offer lower returns.",
+    "analogy": "Buying a bond is like lending money to a friend who promises to pay you back with extra interest after a set period.",
+    "keywords": [
+      "bond",
+      "fixed income",
+      "treasury bond",
+      "corporate bond",
+      "yield",
+      "debt instrument"
+    ]
+  },
+  {
+    "term": "Fundamental Analysis",
+    "slug": "fundamental-analysis",
+    "eli5": "Fundamental analysis is evaluating a stock by studying the company's financial health — revenue, profits, debt, and growth potential — rather than just looking at the price chart.",
+    "analogy": "It's like checking a restaurant's health inspection score, reviews, and menu quality before deciding to eat there, rather than just judging by how long the line is.",
+    "keywords": [
+      "fundamental analysis",
+      "financial analysis",
+      "earnings",
+      "balance sheet",
+      "valuation"
+    ]
+  },
+  {
+    "term": "52-Week High/Low",
+    "slug": "52-week-high-low",
+    "eli5": "The 52-week high is the highest price a stock has reached in the past year, and the 52-week low is the lowest. They help you see where the stock is trading relative to its recent range.",
+    "analogy": "It's like looking at your fitness tracker's highest and lowest heart rates over the past year to see where you stand today.",
+    "keywords": [
+      "52 week high",
+      "52 week low",
+      "yearly range",
+      "price range",
+      "recent high"
+    ]
+  },
+  {
+    "term": "Earnings Season",
+    "slug": "earnings-season",
+    "eli5": "Earnings season is the period each quarter when most publicly traded companies report their financial results. Stock prices often move sharply during this time based on whether results beat or miss expectations.",
+    "analogy": "It's like report card day at school — every company shows its grades, and the market reacts to who passed and who failed.",
+    "keywords": [
+      "earnings season",
+      "quarterly report",
+      "earnings report",
+      "earnings call",
+      "financial results"
+    ]
+  },
+  {
+    "term": "Market Sentiment",
+    "slug": "market-sentiment",
+    "eli5": "Market sentiment is the overall mood or attitude of investors toward the market or a particular asset — whether they feel optimistic (bullish) or pessimistic (bearish).",
+    "analogy": "It's like the vibe at a party — if everyone is excited and dancing, the sentiment is positive. If people are leaving early and looking bored, sentiment is negative.",
+    "keywords": [
+      "sentiment",
+      "market mood",
+      "investor sentiment",
+      "bullish",
+      "bearish",
+      "fear and greed"
+    ]
+  },
+  {
+    "term": "Dead Cat Bounce",
+    "slug": "dead-cat-bounce",
+    "eli5": "A dead cat bounce is a brief, temporary recovery in a stock's price during a long downtrend. The price bounces up slightly but then continues falling — it's not a real recovery.",
+    "analogy": "Even a dead cat will bounce if dropped from high enough — the small bounce doesn't mean the cat is alive again.",
+    "keywords": [
+      "dead cat bounce",
+      "false rally",
+      "temporary recovery",
+      "bear market rally",
+      "trap"
+    ]
+  },
+  {
+    "term": "All-Time High (ATH)",
+    "slug": "all-time-high",
+    "eli5": "An all-time high is the highest price a stock or asset has ever reached in its entire trading history. Reaching an ATH means the asset has never been more valuable.",
+    "analogy": "It's like breaking a world record in the Olympics — the athlete has never performed better than this moment.",
+    "keywords": [
+      "all time high",
+      "ATH",
+      "record high",
+      "peak price",
+      "historical high"
+    ]
+  },
+  {
+    "term": "Dividend Reinvestment (DRIP)",
+    "slug": "dividend-reinvestment",
+    "eli5": "DRIP automatically uses the cash dividends you earn to buy more shares of the same stock, instead of taking the cash. This lets your investment grow faster through compounding.",
+    "analogy": "It's like a fruit tree that drops seeds — instead of eating the seeds, you plant them to grow more trees, which drop more seeds, and so on.",
+    "keywords": [
+      "DRIP",
+      "dividend reinvestment",
+      "automatic reinvestment",
+      "compounding dividends",
+      "share accumulation"
+    ]
+  },
+  {
+    "term": "Sector",
+    "slug": "sector",
+    "eli5": "A sector is a group of companies that operate in the same area of the economy, like technology, healthcare, or energy. Sectors help you categorize and compare similar businesses.",
+    "analogy": "It's like sorting animals at a zoo — all the fish go in the aquarium, all the reptiles go in the reptile house. Sectors group similar companies together.",
+    "keywords": [
+      "sector",
+      "industry",
+      "technology sector",
+      "healthcare sector",
+      "sector rotation"
+    ]
+  },
+  {
+    "term": "RSI (Relative Strength Index)",
+    "slug": "relative-strength-index",
+    "eli5": "RSI is a momentum indicator that measures whether a stock is being bought too much (overbought, above 70) or sold too much (oversold, below 30). It ranges from 0 to 100.",
+    "analogy": "RSI is like a thermostat for stock buying — if it reads too hot (above 70), the stock might cool down. If it reads too cold (below 30), it might warm up.",
+    "keywords": [
+      "RSI",
+      "relative strength index",
+      "overbought",
+      "oversold",
+      "momentum indicator",
+      "technical indicator"
+    ]
+  },
+  {
+    "term": "MACD",
+    "slug": "macd",
+    "eli5": "MACD (Moving Average Convergence Divergence) is a trend-following momentum indicator that shows the relationship between two moving averages of a stock's price. It helps identify buy and sell signals.",
+    "analogy": "MACD is like watching two runners on a track — when the faster runner crosses ahead of the slower one, it signals a change in who's leading the race.",
+    "keywords": [
+      "MACD",
+      "moving average convergence divergence",
+      "trend indicator",
+      "momentum",
+      "signal line",
+      "crossover"
+    ]
+  },
+  {
+    "term": "Growth Stock vs Value Stock",
+    "slug": "growth-vs-value",
+    "eli5": "Growth stocks are expected to grow earnings fast and reinvest profits, while value stocks appear underpriced relative to their actual worth. Growth stocks are riskier but can deliver bigger gains; value stocks are steadier.",
+    "analogy": "A growth stock is like a promising startup restaurant expanding rapidly; a value stock is like a solid family diner that's been around for decades but is currently having a slow month.",
+    "keywords": [
+      "growth stock",
+      "value stock",
+      "growth investing",
+      "value investing",
+      "investing style"
+    ]
+  },
+  {
+    "term": "Large Cap vs Small Cap",
+    "slug": "large-cap-vs-small-cap",
+    "eli5": "Large cap companies are worth over $10 billion (like Apple or Amazon), while small cap companies are worth under $2 billion. Large caps are more stable; small caps have more growth potential but higher risk.",
+    "analogy": "Large cap is like a massive cruise ship — steady and hard to tip over. Small cap is like a speedboat — faster and more agile, but easier to capsize in rough waters.",
+    "keywords": [
+      "large cap",
+      "small cap",
+      "mid cap",
+      "market capitalization",
+      "company size",
+      "investing categories"
+    ]
+  },
+  {
+    "term": "Net Worth",
+    "slug": "net-worth",
+    "eli5": "Net worth is the total value of everything you own (assets) minus everything you owe (debts). It's the simplest measure of your overall financial health.",
+    "analogy": "It's like your personal balance sheet — if you have $10,000 in savings and owe $3,000 on a credit card, your net worth is $7,000.",
+    "keywords": [
+      "net worth",
+      "assets minus liabilities",
+      "wealth",
+      "financial health",
+      "balance sheet"
+    ]
+  },
+  {
+    "term": "Market Maker",
+    "slug": "market-maker",
+    "eli5": "A market maker is a firm that stands ready to buy and sell stocks at any time, providing liquidity so you can always find someone to trade with. They make money from the bid-ask spread.",
+    "analogy": "A market maker is like a currency exchange booth at an airport — they always have cash ready to exchange, and they make a small profit on each transaction.",
+    "keywords": [
+      "market maker",
+      "liquidity provider",
+      "bid-ask spread",
+      "stock exchange",
+      "trading liquidity"
+    ]
+  },
+  {
+    "term": "Circuit Breaker",
+    "slug": "circuit-breaker",
+    "eli5": "A circuit breaker is a automatic trading halt triggered when the market drops too fast in a single day. It pauses trading for a set time to let investors calm down and prevent panic selling.",
+    "analogy": "It's like a fire alarm in a building — when things get too hot (volatile), the alarm goes off and everyone has to step outside for a break before coming back in.",
+    "keywords": [
+      "circuit breaker",
+      "trading halt",
+      "market crash",
+      "circuit breaker levels",
+      "market pause"
+    ]
+  },
+  {
+    "term": "Dividend Aristocrat",
+    "slug": "dividend-aristocrat",
+    "eli5": "A dividend aristocrat is a company in the S&P 500 that has increased its dividend payout for at least 25 consecutive years. They are known for reliability and steady income.",
+    "analogy": "A dividend aristocrat is like a reliable friend who always shows up to your birthday party, year after year, without fail — dependable and consistent.",
+    "keywords": [
+      "dividend aristocrat",
+      "dividend growth",
+      "reliable income",
+      "consistent dividend",
+      "S&P 500"
+    ]
+  },
+  {
+    "term": "Yield Curve",
+    "slug": "yield-curve",
+    "eli5": "The yield curve is a graph showing interest rates on bonds of different maturities. A normal curve slopes upward (long-term rates higher than short-term). An inverted curve (short-term higher) often predicts a recession.",
+    "analogy": "The yield curve is like a weather forecast for the economy — when it looks normal, things are calm. When it flips upside down (inverted), storm clouds may be gathering.",
+    "keywords": [
+      "yield curve",
+      "inverted yield curve",
+      "interest rates",
+      "recession indicator",
+      "treasury bonds"
+    ]
+  },
+  {
+    "term": "Earnings Per Share (EPS)",
+    "slug": "earnings-per-share",
+    "eli5": "EPS tells you how much profit a company made for each share of stock. If a company earned $1 billion with 500 million shares, the EPS is $2 per share.",
+    "analogy": "If a pizza is cut into 8 slices and the whole pizza costs $24, each slice's share of the cost is $3 — EPS is like each slice's share of the profit.",
+    "keywords": [
+      "EPS",
+      "earnings per share",
+      "profit per share",
+      "diluted EPS",
+      "basic EPS"
+    ]
+  },
+  {
+    "term": "P/E Ratio",
+    "slug": "pe-ratio",
+    "eli5": "The P/E ratio shows how much investors pay for every $1 of a company's earnings. A P/E of 25 means investors pay $25 for each $1 of profit the company makes.",
+    "analogy": "It's like paying $25 for a lemonade stand that earns $1 per day — you're paying a premium because you expect it to grow.",
+    "keywords": [
+      "price-to-earnings",
+      "PE ratio",
+      "valuation",
+      "earnings multiple",
+      "price earnings"
+    ]
   }
 ]
